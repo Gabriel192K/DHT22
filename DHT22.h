@@ -2,10 +2,12 @@
 #define __DHT22_H__
 
 /* Dependencies */
-#include "../GPIO/GPIO.h"
 #if defined(ARDUINO)
 #include "Arduino.h"
+#include <GPIO.h>
+#include <Time.h>
 #else
+#include "../GPIO/GPIO.h"
 #include "../Time/Time.h"
 #endif
 
